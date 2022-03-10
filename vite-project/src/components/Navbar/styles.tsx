@@ -32,4 +32,56 @@ export const Wrapper = styled(NavItemWrapper)`
     props.flexDirection ? props.flexDirection : 'column'};
   align-items: ${(props) =>
     props.alignItems ? props.alignItems : 'flex-start'};
+  padding: 0.1em;
+  cursor: pointer;
+  border: 1px solid #131a22;
+
+  &:hover {
+    border: 1px solid #ffffff;
+    border-radius: 0.2em;
+  }
+  @media (max-width: 850px) {
+    display: none;
+  }
+`
+
+export const SearchBox = styled.input`
+  background-color: #ffffff;
+  padding: 0.78em;
+  width: 47%;
+  border: none;
+  @media (max-width: 850px) {
+    border-radius: 0.2em;
+    margin: 0.3em 0;
+  }
+`
+export const Select = styled.select`
+  background-color: #ddd;
+  margin-right: -1.2em;
+  padding: 0.72em 0.5em;
+  border-radius: 0.2em 0em 0em 0.2em;
+  @media (max-width: 850px) {
+    display: none;
+  }
+`
+
+export const SearchIconWrapper = styled.span`
+  background-color: #fabd60;
+  color: #131a22;
+  margin-left: -1em;
+  border-radius: 0em 0.2em 0.2em 0em;
+  padding: 0.32em 0.5em;
+  cursor: pointer;
+  transition: all 250ms ease;
+
+  &:hover {
+    background-color: #ff9900;
+  }
+
+  @media (max-width: 850px) {
+    display: none;
+  }
+`
+export const Flag = styled.img`
+  width: 2em;
 `

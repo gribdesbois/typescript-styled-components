@@ -15,8 +15,8 @@ import {
   Select,
   SearchIconWrapper,
 } from './styles'
-import logo from './assets/logo.png'
-import flag from './assets/flag.png'
+import logo from '../../assets/logo.png'
+import flag from '../../assets/flag.png'
 
 const Navbar: React.FC = () => (
   <>
@@ -49,8 +49,21 @@ const Navbar: React.FC = () => (
         <Text fontSize=".7em">Hello, Sign in</Text>
         <Wrapper flexDirection="row" alignItems="center">
           <Text>Account & Lists</Text>
-          <ArrowDropDown>
+          <ArrowDropDown />
         </Wrapper>
+      </Wrapper>
+      <Wrapper>
+        <Text fontSize=".7em">Returns</Text>
+        <Text>& Orders</Text>
+      </Wrapper>
+
+      <Wrapper flexDirection="row" alignItems="center">
+        <Wrapper alignItems="center">
+          <Text color="#ff9900">0</Text>
+          <ShoppingCartOutlined />
+        </Wrapper>
+
+        <Text>Cart</Text>
       </Wrapper>
     </Container>
   </>
